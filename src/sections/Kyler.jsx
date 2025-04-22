@@ -1,282 +1,32 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
 
-const Kyler = () => {
-  return (<>
-    <StyledWrapper  className="flex flex-col pt-20 justify-center h-screen ">
-      <div className="parent pt-10 mx-auto w-fit">
-        <div className="card">
-          <div className="logo">
-            <span className="circle circle1" />
-            <span className="circle circle2" />
-            <span className="circle circle3" />
-            <span className="circle circle4" />
-            <span className="circle circle5">
-            <img 
-                src="./pp.png" 
-                alt="Prashant Adhikari" 
-                className="svg" 
-                style={{ width: '50px', height: '30px', objectFit: 'cover' }} 
-                />
-            </span>
+function Kyler() {
+  return (
+    <section id='home'>
+      <div className="z-20">
+        <div className="container h-screen flex items-center justify-center text-center">
+            <div className='max-w-[800px] mx-auto'>
+
+              <div className='mb-6'>
+                <img class=" size-[200px] mx-auto rounded-full bg-gradient-to-t from-gray-700 to-gray-950 object-cover" src="pp.png" alt="image description"></img>
+
+              </div>
+                 <div>
+                      <h1 className='mb-2 text-2xl font-extrabold capitalize leading-[1.2] md:text-5xl'>Sleek.<span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Fast.</span> Responsive. Functional.</h1>
+                      <p className='mt-5 text-sm font-bold capitalize md:text-xl'>I’m passionate about designing and developing websites that put the user first. Every site I build is responsive, intuitive, and built for performance.
+                      </p>
+                      <a
+                        className="mt-5 px-5 py-3 inline-block capitalize font-semibold bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-md transition duration-300 hover:from-blue-400  hover:to-purple-400 "
+                        href="#projects">
+                        View My Work
+                      </a>
+
+                </div>
+              </div>    
           </div>
-          <div className="glass" />
-          <div className="content">
-            <span className="title">Frontend Developer</span>
-            <span className="text">Transforming ideas into interactive, high-performance websites.</span>
-          </div>
-        </div>
       </div>
-            <div className="content-section flex justify-center items-center">
-        <div className="content text-white text-center md:w-3/4 lg:w-1/2">
-            <h1 className=" text-3xl font-bold block text-left mt-0 text-white">
-            Hi It's me Prashant Adhikari!
-            </h1>
-            <p className=" mt-4 text-sm text-white">
-            I'm a Frontend Developer with expertise in HTML, CSS, JavaScript, and React.js. I enjoy transforming ideas into interactive, high-performance websites. 
-            My focus is on creating intuitive user experiences and scalable web applications.
-            </p>
-        </div>
-        </div>
-    </StyledWrapper>
-    </>
-  );
+    </section>
+  )
 }
 
-const StyledWrapper = styled.div`
-  .parent {
-    width: 290px;
-    height: 300px;
-    perspective: 1000px;
-  }
-
-  .card {
-    height: 100%;
-    border-radius: 50px;
-    background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
-    transition: all 0.5s ease-in-out;
-    transform-style: preserve-3d;
-    box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
-  }
-
-  .glass {
-    transform-style: preserve-3d;
-    position: absolute;
-    inset: 8px;
-    border-radius: 55px;
-    border-top-right-radius: 100%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0.815) 100%);
-    /* -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px); */
-    transform: translate3d(0px, 0px, 25px);
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .content {
-    padding: 100px 60px 0px 30px;
-    transform: translate3d(0, 0, 26px);
-  }
-
-  .content .title {
-    display: block;
-    color: #00894d;
-    font-weight: 900;
-    font-size: 20px;
-  }
-
-  .content .text {
-    display: block;
-    color: rgba(0, 137, 78, 0.7647058824);
-    font-size: 15px;
-    margin-top: 20px;
-  }
-
-  .bottom {
-    padding: 10px 12px;
-    transform-style: preserve-3d;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transform: translate3d(0, 0, 26px);
-  }
-
-  .bottom .view-more {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    justify-content: flex-end;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .bottom .view-more:hover {
-    transform: translate3d(0, 0, 10px);
-  }
-
-  .bottom .view-more .view-more-button {
-    background: none;
-    border: none;
-    color: #00c37b;
-    font-weight: bolder;
-    font-size: 12px;
-  }
-
-  .bottom .view-more .svg {
-    fill: none;
-    stroke: #00c37b;
-    stroke-width: 3px;
-    max-height: 15px;
-  }
-
-  .bottom .social-buttons-container {
-    display: flex;
-    gap: 10px;
-    transform-style: preserve-3d;
-  }
-
-  .bottom .social-buttons-container .social-button {
-    width: 30px;
-    aspect-ratio: 1;
-    padding: 5px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    border: none;
-    display: grid;
-    place-content: center;
-    box-shadow: rgba(5, 71, 17, 0.5) 0px 7px 5px -5px;
-  }
-
-  .bottom .social-buttons-container .social-button:first-child {
-    transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
-  }
-
-  .bottom .social-buttons-container .social-button:nth-child(2) {
-    transition: transform 0.2s ease-in-out 0.6s, box-shadow 0.2s ease-in-out 0.6s;
-  }
-
-  .bottom .social-buttons-container .social-button:nth-child(3) {
-    transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
-  }
-
-  .bottom .social-buttons-container .social-button .svg {
-    width: 15px;
-    fill: #00894d;
-  }
-
-  .bottom .social-buttons-container .social-button:hover {
-    background: black;
-  }
-
-  .bottom .social-buttons-container .social-button:hover .svg {
-    fill: white;
-  }
-
-  .bottom .social-buttons-container .social-button:active {
-    background: rgb(255, 234, 0);
-  }
-
-  .bottom .social-buttons-container .social-button:active .svg {
-    fill: black;
-  }
-
-  .logo {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform-style: preserve-3d;
-  }
-
-  .logo .circle {
-    display: block;
-    position: absolute;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    top: 0;
-    right: 0;
-    box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    background: rgba(0, 249, 203, 0.2);
-    transition: all 0.5s ease-in-out;
-  }
-
-  .logo .circle1 {
-    width: 170px;
-    transform: translate3d(0, 0, 20px);
-    top: 8px;
-    right: 8px;
-  }
-
-  .logo .circle2 {
-    width: 140px;
-    transform: translate3d(0, 0, 40px);
-    top: 10px;
-    right: 10px;
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    transition-delay: 0.4s;
-  }
-
-  .logo .circle3 {
-    width: 110px;
-    transform: translate3d(0, 0, 60px);
-    top: 17px;
-    right: 17px;
-    transition-delay: 0.8s;
-  }
-
-  .logo .circle4 {
-    width: 80px;
-    transform: translate3d(0, 0, 80px);
-    top: 23px;
-    right: 23px;
-    transition-delay: 1.2s;
-  }
-
-  .logo .circle5 {
-    width: 50px;
-    transform: translate3d(0, 0, 100px);
-    top: 30px;
-    right: 30px;
-    display: grid;
-    place-content: center;
-    transition-delay: 1.6s;
-  }
-
-  .logo .circle5 .svg {
-    width: 20px;
-    fill: white;
-  }
-
-  .parent:hover .card {
-    transform: rotate3d(1, 1, 0, 30deg);
-    box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
-  }
-
-  .parent:hover .card .bottom .social-buttons-container .social-button {
-    transform: translate3d(0, 0, 50px);
-    box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
-  }
-
-  .parent:hover .card .logo .circle2 {
-    transform: translate3d(0, 0, 60px);
-  }
-
-  .parent:hover .card .logo .circle3 {
-    transform: translate3d(0, 0, 80px);
-  }
-
-  .parent:hover .card .logo .circle4 {
-    transform: translate3d(0, 0, 100px);
-  }
-
-  .parent:hover .card .logo .circle5 {
-    transform: translate3d(0, 0, 120px);
-  }`;
-
-export default Kyler;
+export default Kyler
