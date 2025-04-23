@@ -8,7 +8,7 @@ function Kyler() {
             <div className='max-w-[800px] mx-auto'>
 
               <div className='mb-6'>
-                <img class=" size-[200px] mx-auto rounded-full bg-gradient-to-t from-gray-700 to-gray-950 object-cover" src="pp.png" alt="image description"></img>
+                <img className=" size-[200px] mx-auto rounded-full bg-gradient-to-t from-gray-700 to-gray-950 object-cover" src="pp.png" alt="image description"></img>
 
               </div>
                  <div>
