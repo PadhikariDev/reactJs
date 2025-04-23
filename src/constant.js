@@ -13,7 +13,7 @@ export const projects =[
         description: 'Palatin is a modern hotel website built with next-js',
         image:Project1,
         stack :['React-js' ,'Next-js', 'Twailwind-css'],
-        liveUrl: 'hhtps://www.google.com',
+        liveUrl: 'https://www.google.com',
         sourceUrls:'https://www.google.com'
 
     },
@@ -23,7 +23,7 @@ export const projects =[
         description: 'Palatin is a modern hotel website built with next-js',
         image:Project2,
         stack :['React-js' ,'Next-js', 'Twailwind-css'],
-        liveUrl: 'hhtps://www.google.com',
+        liveUrl: 'https://www.google.com',
         sourceUrls:'https://www.google.com'
 
     },
@@ -33,7 +33,7 @@ export const projects =[
         description: 'Palatin is a modern hotel website built with next-js',
         image:Project3,
         stack :['React-js' ,'Next-js', 'Twailwind-css'],
-        liveUrl: 'hhtps://www.google.com',
+        liveUrl: 'https://www.google.com',
         sourceUrls:'https://www.google.com'
 
     },
