@@ -5,6 +5,13 @@ import Project2 from './assets/project-2.jpg';
 import Project3 from './assets/project-3.webp';
 
 
+import html from './assets/html.svg';
+import js from './assets/js.svg';
+import reactjs from './assets/reactjs.svg';
+import next from './assets/next.svg';
+import mongo from './assets/mongo.svg';
+import tailwind from './assets/tailwind.svg';
+
 export const projects =[
 
     {
@@ -36,5 +43,41 @@ export const projects =[
         liveUrl: 'https://www.google.com',
         sourceUrls:'https://www.google.com'
 
+    },
+]
+
+
+export const skills=[
+    {
+        id:1,
+        image:html,
+        name:'Html-5',
+
+    },{
+        id:2,
+        image:tailwind,
+        name:'Tailwind-CSS',
+        
+    },{
+        id:3,
+        image:js,
+        name:'Java-Scripts',
+        
+    },{
+        id:4,
+        image:next,
+        name:'Next-Js',
+        
+    },{
+        id:5,
+        image:reactjs,
+        name:'React-Js',
+        
+    },
+    {
+        id:6,
+        image:mongo,
+        name:'MongoDB',
+        
     },
 ]

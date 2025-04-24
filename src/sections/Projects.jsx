@@ -5,7 +5,7 @@ import React from 'react'
 function Projects() {
   return (
       <section id='project'>
-          <div className="container text-center">
+          <div className="container text-center mt-22">
             <h2 className='text-3xl mb-5 md:text-5xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent '>Projects</h2>
             <p className='text-sm  mb-8 md:text-xl md:mb-20 md:mt-5'>Have a look to  my work!</p>
           </div>
